@@ -1,0 +1,185 @@
+/* `sm` applies to x-small devices (portrait phones, less than 576px)  */
+@media (max-width: 35.99875em) {
+
+    .navigation-menus{
+        width: 100%;
+    }
+
+    .banner-headline{
+        font-size: 11vw;
+    }
+
+    .section-headline{
+        font-size: 3em;
+    }
+
+    .latest-product-link {
+        font-size: 2em;
+    }
+    
+    .paragraph-size{
+        font-size: 1.125em;
+    }
+
+    .card-headline {
+        font-size: 1.9em;
+        font-family: "Belleza", sans-serif;
+    }
+}
+
+
+/*  330px to 576px  */
+@media (min-width: 20.625em) and (max-width: 35.99875em) {
+    .container-padding-x{
+        padding: 0 1em;
+    }
+    .scrolling-card{
+        width: 85%;
+      }
+}
+
+/* less than 330px */
+@media (max-width: 20.62375em){
+    .container-padding-x{
+        padding: 0 0.75em;
+    }
+
+    .explore-btn{
+        min-width: 100%;
+    }
+
+    .scrolling-card{
+        width: 85%;
+      }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px)  sm - md   576px - 36em    768px - 48em*/
+@media (min-width: 36em) and (max-width: 47.99875em) {
+    .container-padding-x{
+        padding: 0 2em;
+    }
+
+    .navigation-menus{
+        width: 80%;
+    }
+
+    .banner-headline{
+        font-size: 4em;
+    }
+}
+
+
+/* `lg` applies to medium devices (tablets, less than 992px)   922px - 62em */
+@media (max-width: 61.99875em) {
+    .scrolling-image-container{
+        position: static; 
+        height: max-content;
+      }
+
+      .scrolling-card-section{
+        height: 250vh;
+      }
+}
+
+
+/* md - lg    768px - 48em  992px - 62px */
+@media (min-width: 48em) and (max-width: 61.99875em) {
+    .container-padding-x{
+        padding: 0 3em;
+    }
+
+    .navigation-menus{
+        width: 70%;
+    }
+    .banner-headline{
+        font-size: 4em;
+    }
+}
+
+
+/* `xl` applies to large devices (desktops, less than 1200px)  75em - 1200px  */
+@media (min-width: 62em) and (max-width: 74.99875em) {
+    .container-padding-x{
+        padding: 0 3em;
+    }
+    .navigation-menus{
+        width: 50%;
+    }
+
+    .section-headline {
+        font-size: 3em;
+    }
+
+    .latest-product-link {
+        font-size: 2em;
+    }
+
+    .banner-headline{
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 74.99875em) {
+    .navigation-menus{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 102px;
+        right: -100%;
+        padding: 24px;
+        height: calc(100vh - 102px);
+        transition: 0.5s ease-out;
+    }
+
+    .navigation-bar{
+        width: 100%;
+    }
+
+    .menu-drop{
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 0.5px solid #fff;
+    }
+    .custom-drop-menu{
+        position: static !important;
+        margin-bottom: 12px !important;
+    }
+
+    .header-icon-container{
+        width: 100%;
+    }
+
+    .header-icon-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        border-radius: 8px;
+        padding: 6px 8px;
+        cursor: pointer;
+        min-width: 65px;
+        min-height: 42px;
+        width: auto;
+    }
+
+    .navigation-menus.show {
+        right: 0;
+    }
+
+    .account-container .dropdown-menu{
+        left: 40px !important;
+    }
+    
+}
+
+
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px)  1400px - 87.5em */
+@media (min-width: 75em) and (max-width: 87.49875em) {
+    .container-padding-x{
+        padding: 0 4em;
+    }
+}
+
+
+/* 1200px max */
+@media (min-width: 75em) {}
