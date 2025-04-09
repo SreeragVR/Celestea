@@ -25,6 +25,9 @@
         font-size: 1.9em;
         font-family: "Belleza", sans-serif;
     }
+    .cart-image-container{
+        width: 100%;
+    }
 }
 
 
@@ -79,6 +82,12 @@
       .scrolling-card-section{
         height: 250vh;
       }
+
+      .product-image-container{
+        height: fit-content;
+        position: static;
+        margin-bottom: 46px;
+        }
 }
 
 

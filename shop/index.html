@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestea</title>
+    <link rel="shortcut icon" href="../assets/CELESTEA_iocn.ico" type="image/x-icon">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- LIB FILES -->
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/icon/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../lib/swiper.min.css">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <header class="container-padding-x py-3">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+            <div class="col-xl-2">
+                <a href="/">
+                    <img src="../assets/Celestea_LOGO.png" alt="LOGO" class="brand-logo">
+                </a>
+            </div>
+
+
+            <div class="d-flex flex-sm-fill" id="navigation-container">
+
+                <div class="d-flex d-xl-none ms-auto">
+
+                    <input id="menu-toggler" type="checkbox">
+                    <label for="menu-toggler" class="to-bar-group">
+                        <span class="to-bar bar1"></span>
+                        <span class="to-bar bar2"></span>
+                        <span class="to-bar bar3"></span>
+                    </label>
+
+                </div>
+
+
+                <nav
+                    class="flex-column flex-xl-row align-items-center gap-4 flex-fill justify-content-xl-between navigation-menus">
+
+                    <div
+                        class="navigation-bar d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-4 m-0 p-0 order-2 order-xl-1">
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>Decorative Lighting</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="/shop">Demo 1</a>
+                                    <a href="/shop">Demo 2</a>
+                                    <a href="/shop">Demo 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>Architectural Lighting</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="/shop">Demo 1</a>
+                                    <a href="/shop">Demo 2</a>
+                                    <a href="/shop">Demo 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>Wall lights</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="/shop">Demo 1</a>
+                                    <a href="/shop">Demo 2</a>
+                                    <a href="/shop">Demo 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>More</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="/about">About us</a>
+                                    <a href="/contact">Contact us</a>
+                                    <a href="/shop">Shop</a>
+                                    <a href="/product">Products</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>Sale</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="/shop">Demo 1</a>
+                                    <a href="/shop">Demo 2</a>
+                                    <a href="/shop">Demo 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="d-flex align-items-center gap-2 gap-sm-3 gap-xl-4 header-icon-container order-1 order-xl-2 flex-wrap">
+
+                        <div class="header-icon-box search-container flex-fill" data-bs-toggle="collapse"
+                            data-bs-target="#searchFilterBox">
+                            <i class="bi bi-search"></i>
+                        </div>
+
+                        <div class="header-icon-box cart-container flex-fill" data-bs-toggle="offcanvas"
+                            data-bs-target="#cartSideBar">
+                            <i class="bi bi-cart2"></i>
+                        </div>
+
+                        <div class="header-icon-box wishlist-container flex-fill">
+                            <i class="bi bi-heart"></i>
+                        </div>
+
+                        <div class="ms-sm-2 account-container flex-fill">
+                            <div class="header-icon-box" data-bs-toggle="dropdown" id="accountDrop">
+                                <i class="bi bi-person"></i>
+                            </div>
+
+                            <div class="dropdown-menu dropdown-menu-end account-drop">
+                                <div class="d-flex flex-column">
+                                    <a href="#">Account</a>
+                                    <a href="#">Settings</a>
+                                    <a href="#">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+    <!-- SERACH FILTER BOX -->
+
+    <div class="collapse fade search-container-box col-12" id="searchFilterBox">
+        <div class="d-flex col-lg-4 col-md-6 col-sm-8 col-11 justify-content-center" style="height: fit-content;"
+            id="searchContainer">
+            <input type="search" class="search-input paragraph-size w-100" placeholder="Search here...">
+        </div>
+    </div>
+
+    <!-- CART OFFCANVAS -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSideBar" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="card-headline">Shopping Cart</h5>
+            <button class="btn ms-auto" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+
+            <div>
+
+                <div class="d-flex align-items-center gap-3 cart-side-box">
+                    <img src="../../assets/images/Blue Pendant.png" alt="product" loading="lazy" style="width: 64px;">
+                    <div class="d-flex align-items-center justify-content-between flex-fill flex-wrap gap-2">
+                        <div class="d-flex flex-column">
+                            <h5 class="featured-category-text mb-1">Chandeliers</h5>
+                            <span>₹ 20000 /-</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <span class="cart-product-count">
+                                <i class="bi bi-dash"></i>
+                            </span>
+                            <input type="number" class="text-center" value="1" style="width: 50px;">
+                            <span class="cart-product-count">
+                                <i class="bi bi-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="#" class="mt-4 cart-checkout paragraph-size fw-normal">Check Out</a>
+
+        </div>
+    </div>
+
+
+
+    <!-- SECTION START  -->
+<section class="container-padding-x container-padding-y section-bg">
+
+    <div class="pt-5">
+        <h3 class="offer-text text-white">Shop</h3>
+
+            <div class="d-flex gap-xl-5 gap-lg-4 gap-3 flex-wrap justify-content-end">
+
+                <div class="d-flex align-items-center gap-2 gap-sm-3 justify-content-end flex-wrap">
+
+                    <div class="d-flex gap-3 element-text sort-box brand-white-text">
+                        <i class="bi bi-filter"></i>
+                        <span>Sort by : </span>
+                    </div>
+
+                    <span class="position-relative selection-custom">
+                        <select name="" id="" class="sort-selection element-text">
+
+                                <option value="">Default Sort </option>
+                                <option value="">Price - Lower to higher </option>
+                                <option value="">Price - Higher to lower </option>
+
+                        </select>
+                    </span>
+
+                </div>
+
+
+                <div class="d-flex align-items-center gap-2 element-text filter-box" id="filterToggle">
+
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4375 7.44582C10.2552 7.44582 10.0803 7.52189 9.95136 7.6573C9.82243 7.7927 9.75 7.97635 9.75 8.16785C9.75 8.35934 9.82243 8.54299 9.95136 8.6784C10.0803 8.8138 10.2552 8.88987 10.4375 8.88987C10.6198 8.88987 10.7947 8.8138 10.9236 8.6784C11.0526 8.54299 11.125 8.35934 11.125 8.16785C11.125 7.97635 11.0526 7.7927 10.9236 7.6573C10.7947 7.52189 10.6198 7.44582 10.4375 7.44582ZM8.49188 7.44582C8.63391 7.02305 8.89732 6.65696 9.24579 6.39801C9.59425 6.13906 10.0106 6 10.4375 6C10.8644 6 11.2807 6.13906 11.6292 6.39801C11.9777 6.65696 12.2411 7.02305 12.3831 7.44582H17.3125C17.4948 7.44582 17.6697 7.52189 17.7986 7.6573C17.9276 7.7927 18 7.97635 18 8.16785C18 8.35934 17.9276 8.54299 17.7986 8.6784C17.6697 8.8138 17.4948 8.88987 17.3125 8.88987H12.3831C12.2411 9.31264 11.9777 9.67873 11.6292 9.93768C11.2807 10.1966 10.8644 10.3357 10.4375 10.3357C10.0106 10.3357 9.59425 10.1966 9.24579 9.93768C8.89732 9.67873 8.63391 9.31264 8.49188 8.88987H7.6875C7.50516 8.88987 7.3303 8.8138 7.20136 8.6784C7.07243 8.54299 7 8.35934 7 8.16785C7 7.97635 7.07243 7.7927 7.20136 7.6573C7.3303 7.52189 7.50516 7.44582 7.6875 7.44582H8.49188ZM14.5625 11.778C14.3802 11.778 14.2053 11.854 14.0764 11.9895C13.9474 12.1249 13.875 12.3085 13.875 12.5C13.875 12.6915 13.9474 12.8751 14.0764 13.0105C14.2053 13.146 14.3802 13.222 14.5625 13.222C14.7448 13.222 14.9197 13.146 15.0486 13.0105C15.1776 12.8751 15.25 12.6915 15.25 12.5C15.25 12.3085 15.1776 12.1249 15.0486 11.9895C14.9197 11.854 14.7448 11.778 14.5625 11.778ZM12.6169 11.778C12.7589 11.3552 13.0223 10.9891 13.3708 10.7302C13.7193 10.4712 14.1356 10.3322 14.5625 10.3322C14.9894 10.3322 15.4057 10.4712 15.7542 10.7302C16.1027 10.9891 16.3661 11.3552 16.5081 11.778H17.3125C17.4948 11.778 17.6697 11.854 17.7986 11.9895C17.9276 12.1249 18 12.3085 18 12.5C18 12.6915 17.9276 12.8751 17.7986 13.0105C17.6697 13.146 17.4948 13.222 17.3125 13.222H16.5081C16.3661 13.6448 16.1027 14.0109 15.7542 14.2698C15.4057 14.5288 14.9894 14.6678 14.5625 14.6678C14.1356 14.6678 13.7193 14.5288 13.3708 14.2698C13.0223 14.0109 12.7589 13.6448 12.6169 13.222H7.6875C7.50516 13.222 7.3303 13.146 7.20136 13.0105C7.07243 12.8751 7 12.6915 7 12.5C7 12.3085 7.07243 12.1249 7.20136 11.9895C7.3303 11.854 7.50516 11.778 7.6875 11.778H12.6169ZM10.4375 16.1101C10.2552 16.1101 10.0803 16.1862 9.95136 16.3216C9.82243 16.457 9.75 16.6407 9.75 16.8322C9.75 17.0236 9.82243 17.2073 9.95136 17.3427C10.0803 17.4781 10.2552 17.5542 10.4375 17.5542C10.6198 17.5542 10.7947 17.4781 10.9236 17.3427C11.0526 17.2073 11.125 17.0236 11.125 16.8322C11.125 16.6407 11.0526 16.457 10.9236 16.3216C10.7947 16.1862 10.6198 16.1101 10.4375 16.1101ZM8.49188 16.1101C8.63391 15.6874 8.89732 15.3213 9.24579 15.0623C9.59425 14.8034 10.0106 14.6643 10.4375 14.6643C10.8644 14.6643 11.2807 14.8034 11.6292 15.0623C11.9777 15.3213 12.2411 15.6874 12.3831 16.1101H17.3125C17.4948 16.1101 17.6697 16.1862 17.7986 16.3216C17.9276 16.457 18 16.6407 18 16.8322C18 17.0236 17.9276 17.2073 17.7986 17.3427C17.6697 17.4781 17.4948 17.5542 17.3125 17.5542H12.3831C12.2411 17.9769 11.9777 18.343 11.6292 18.602C11.2807 18.8609 10.8644 19 10.4375 19C10.0106 19 9.59425 18.8609 9.24579 18.602C8.89732 18.343 8.63391 17.9769 8.49188 17.5542H7.6875C7.50516 17.5542 7.3303 17.4781 7.20136 17.3427C7.07243 17.2073 7 17.0236 7 16.8322C7 16.6407 7.07243 16.457 7.20136 16.3216C7.3303 16.1862 7.50516 16.1101 7.6875 16.1101H8.49188Z"/>
+                    </svg>
+                    Filter
+                </div>
+
+            </div>
+
+            <!-- FILTERS CATEGORY -->
+
+            <div class="d-flex align-items-center justify-content-end gap-xl-5 gap-lg-4 gap-md-3 gap-2 flex-wrap mt-3"
+                id="filtersOptions">
+
+                <span class="position-relative selection-custom">
+                    <select name="" id="" class="sort-selection element-text">
+
+                        <option value="">Category </option>
+                        <option value="">Architectural Lighting </option>
+
+                    </select>
+                </span>
+
+                <span class="position-relative selection-custom">
+                    <select name="" id="" class="sort-selection element-text">
+
+                        <option value="">&#8377 0 - &#8377 10000</option>
+                        <option value="">&#8377 10001 - &#8377 20000</option>
+
+                    </select>
+                </span>
+
+            </div>
+    </div>
+</section>
+
+<section class="container-padding-x section-bg">
+    <div class="">
+
+        <div class="row flex-wrap row-cols-md-2 row-cols-1 g-lg-5 g-md-4 g-3 row-cols-xl-3">
+
+            <div class="col">
+
+                <div class="d-flex flex-column gap-4 align-items-center product-card">
+                        <div class="product-image">
+                            <img src="../assets/images/Blue Pendant.png" alt="product" loading="lazy"
+                                style="width: 100%;">
+
+                                <div class="product-view">
+
+                                    <div class="product-view-box">
+                                        <a href="#"><i class="bi bi-cart-plus"></i></a>
+                                        <a href="#"><i class="bi bi-heart"></i></a>
+                                        <a href="#"><i class="bi bi-search"></i></a>
+                                    </div>
+
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-start justify-content-between gap-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="category-text text-white">Blue Pendant</h5>
+                                <p class="card-content brand-white-text">
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h6 class="card-price-text text-white">&#8377 20000 /-</h6>
+                                <h6 class="card-price-text strike-price brand-white-text">&#8377 26000 /-</h6>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class="col">
+                <div class="d-flex flex-column gap-4 align-items-center product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/Blue Pendant.png" alt="product" loading="lazy"
+                            style="width: 100%;">
+
+                            <div class="product-view">
+
+                                <div class="product-view-box">
+                                    <a href="#"><i class="bi bi-cart-plus"></i></a>
+                                    <a href="#"><i class="bi bi-heart"></i></a>
+                                    <a href="#"><i class="bi bi-search"></i></a>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-between gap-3">
+                        <div class="d-flex flex-column">
+                            <h5 class="category-text text-white">Blue Pendant</h5>
+                            <p class="card-content brand-white-text">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h6 class="card-price-text text-white">&#8377 20000 /-</h6>
+                            <h6 class="card-price-text strike-price brand-white-text">&#8377 26000 /-</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="d-flex flex-column gap-4 align-items-center product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/Blue Pendant.png" alt="product" loading="lazy"
+                            style="width: 100%;">
+
+                            <div class="product-view">
+
+                                <div class="product-view-box">
+                                    <a href="#"><i class="bi bi-cart-plus"></i></a>
+                                    <a href="#"><i class="bi bi-heart"></i></a>
+                                    <a href="#"><i class="bi bi-search"></i></a>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-between gap-3">
+                        <div class="d-flex flex-column">
+                            <h5 class="category-text text-white">Blue Pendant</h5>
+                            <p class="card-content brand-white-text">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h6 class="card-price-text text-white">&#8377 20000 /-</h6>
+                            <h6 class="card-price-text strike-price brand-white-text">&#8377 26000 /-</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="d-flex flex-column gap-4 align-items-center product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/Blue Pendant.png" alt="product" loading="lazy"
+                            style="width: 100%;">
+
+                            <div class="product-view">
+
+                                <div class="product-view-box">
+                                    <a href="#"><i class="bi bi-cart-plus"></i></a>
+                                    <a href="#"><i class="bi bi-heart"></i></a>
+                                    <a href="#"><i class="bi bi-search"></i></a>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-between gap-3">
+                        <div class="d-flex flex-column">
+                            <h5 class="category-text text-white">Blue Pendant</h5>
+                            <p class="card-content brand-white-text">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h6 class="card-price-text text-white">&#8377 20000 /-</h6>
+                            <h6 class="card-price-text strike-price brand-white-text">&#8377 26000 /-</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+                <div class="d-flex flex-column gap-4 align-items-center product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/Blue Pendant.png" alt="product" loading="lazy"
+                            style="width: 100%;">
+
+                            <div class="product-view">
+
+                                <div class="product-view-box">
+                                    <a href="#"><i class="bi bi-cart-plus"></i></a>
+                                    <a href="#"><i class="bi bi-heart"></i></a>
+                                    <a href="#"><i class="bi bi-search"></i></a>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-between gap-3">
+                        <div class="d-flex flex-column">
+                            <h5 class="category-text text-white">Blue Pendant</h5>
+                            <p class="card-content brand-white-text">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h6 class="card-price-text text-white">&#8377 20000 /-</h6>
+                            <h6 class="card-price-text strike-price brand-white-text">&#8377 26000 /-</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="d-flex flex-column gap-4 align-items-center product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/Blue Pendant.png" alt="product" loading="lazy"
+                            style="width: 100%;">
+
+                            <div class="product-view">
+
+                                <div class="product-view-box">
+                                    <a href="#"><i class="bi bi-cart-plus"></i></a>
+                                    <a href="#"><i class="bi bi-heart"></i></a>
+                                    <a href="#"><i class="bi bi-search"></i></a>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-between gap-3">
+                        <div class="d-flex flex-column">
+                            <h5 class="category-text text-white">Blue Pendant</h5>
+                            <p class="card-content brand-white-text">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h6 class="card-price-text text-white">&#8377 20000 /-</h6>
+                            <h6 class="card-price-text strike-price brand-white-text">&#8377 26000 /-</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- PAGINATION -->
+         
+        <div class="d-flex justify-content-end py-xl-5 py-4">
+
+            <div class="d-flex gap-3">
+
+                <!-- PREV PAGINATION -->
+                <span class="prev-pagination">
+                    <i class="bi bi-chevron-left"></i>
+                    Prev
+                </span>
+
+                <!-- PAGES -->
+
+                <div class="d-flex gap-2">
+
+                    <span class="pagination-number">1</span>
+                    <span class="pagination-number">2</span>
+
+                </div>
+
+
+                <!-- NEXT PAGINATION -->
+                <span class="next-pagination">
+                    Next
+                    <i class="bi bi-chevron-right"></i>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="container-padding-x container-padding-y section-bg">
+
+    <div class="cta-section d-flex flex-column justify-content-center">
+        <h3 class="offer-text text-white">Illuminate Your Home with Luxury</h3>
+        <p class="paragraph-size brand-white-text col-lg-6 col-md-9">Whether renovating or designing a new home, Celestea Luxury Lighting is here to elevate your interiors.</p>
+
+        <div class="d-flex align-items-center flex-wrap gap-xl-5 gap-lg-4 gap-3 mt-3 mt-lg-4">
+
+            <a href="#" class="cta-outline-btn min-w">Explore Our Collection</a>
+
+            <a href="#" class="add-to-cart-button min-w">Contact Us</a>
+
+        </div>
+    </div>
+
+</section>
+
+    <!--FOOTER -->
+
+
+    <footer class="section-bg container-padding-x container-padding-y">
+
+        <div class="brand-white-text">
+            <div class="d-flex flex-wrap  justify-content-center">
+
+                <!-- First Div -->
+                <div
+                    class="col-lg-3 col-md-12 col-12 d-flex align-items-center align-items-lg-start flex-column  gap-4 text-center text-lg-start text-md-center pb-4">
+
+                    <a href="/">
+                        <img src="../assets/Celestea_LOGO.png" class="brand-logo" alt="logo" loading="lazy">
+                    </a>
+
+                    <p class="paragraph-size col-lg-12 col-md-8 col-sm-10 ">
+                        At Celestea, we believe lighting is more than just
+                        illumination—it's an art form that transforms spaces and inspires moods.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start socialIcons">
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-youtube"></i></a>
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="d-flex mt-lg-0 mt-4 flex-wrap col-lg-9 col-12 justify-content-between gap-3 gap-lg-0">
+
+                    <div class="col-lg-4 col-md-5 col-12 d-flex  justify-content-around align-items-center pb-4">
+                        <div class="vertical-line d-none d-lg-block"></div>
+                        <div class="d-flex flex-column gap-2 ps-md-3 text-center text-md-center">
+                            <h4 class="footer-subHead">Quick links</h4>
+                            <a href="/">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="/shop">Product</a>
+                            <a href="/shop">Categories</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-12 d-flex justify-content-around align-items-center pb-4">
+                        <div class="vertical-line d-none d-lg-block"></div>
+                        <div class="d-flex flex-column gap-2 ps-md-3 text-center text-md-center">
+                            <h4 class="footer-subHead">Major Categories</h4>
+                            <a href="">Chandeliers</a>
+                            <a href="">Pendants</a>
+                            <a href="">Wall Lights</a>
+                            <a href="">Home Decor</a>
+                            <a href="">Outdoor Lights</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-none d-md-block d-lg-none" style="background-color: #100b0033; height: 1px;">
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-12 d-flex justify-content-around align-items-center pb-4">
+                        <div class="vertical-line d-none d-lg-block"></div>
+                        <div class="d-flex flex-column gap-2 ps-md-3 text-center text-md-center">
+                            <h4 class="footer-subHead">Company</h4>
+                            <a href="">Help Center</a>
+                            <a href="">Address Store</a>
+                            <a href="">Privacy Policy</a>
+                            <a href="">Terms & Conditions</a>
+                            <a href="">Delivery & Returns</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="text-center mt-3 brand-white-text">
+            <p class="copyRight">© Copyright 2025 | CELESTEA . Powered by Zenerom Creative Lab.</p>
+        </div>
+
+    </footer>
+
+    <!-- LIB FILES -->
+    <script src="../lib/bootstrap.min.js"></script>
+    <script src="../lib/swiper.min.js"></script>
+    <!-- JS LINK -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
