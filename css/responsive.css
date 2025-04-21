@@ -28,6 +28,9 @@
     .cart-image-container{
         width: 100%;
     }
+    .about-fancy-text {
+        font-size: 14vw;
+    }
 }
 
 
@@ -39,6 +42,14 @@
     .scrolling-card{
         width: 85%;
       }
+      .inner-banner-headline{
+        font-size: 15vw ;
+    }
+
+    .auth-form{
+        padding:46px 32px;
+        border-radius: 10px;
+    }
 }
 
 /* less than 330px */
@@ -54,6 +65,13 @@
     .scrolling-card{
         width: 85%;
       }
+      .inner-banner-headline{
+        font-size: 15vw ;
+    }
+    .auth-form{
+        padding:16px;
+        border-radius: 10px;
+    }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px)  sm - md   576px - 36em    768px - 48em*/
@@ -68,6 +86,16 @@
 
     .banner-headline{
         font-size: 4em;
+    }
+    .inner-banner-headline{
+        font-size:14vw ;
+    }
+    .about-fancy-text {
+        font-size: 13vw;
+    }
+
+    .auth-form{
+        padding:56px 46px;
     }
 }
 
@@ -91,7 +119,7 @@
 }
 
 
-/* md - lg    768px - 48em  992px - 62px */
+/* md - lg    768px - 48em  992px - 62em */
 @media (min-width: 48em) and (max-width: 61.99875em) {
     .container-padding-x{
         padding: 0 3em;
@@ -102,6 +130,17 @@
     }
     .banner-headline{
         font-size: 4em;
+    }
+    .inner-banner-headline{
+        font-size:12vw ;
+    }
+
+    .about-fancy-text {
+        font-size: 15vw;
+    }
+
+    .auth-form{
+        padding: 56px;
     }
 }
 
@@ -125,6 +164,17 @@
 
     .banner-headline{
         font-size: 4em;
+    }
+
+    .inner-banner-headline{
+        font-size:9vw ;
+    }
+    .about-fancy-text {
+        font-size: 12vw;
+    }
+
+    .auth-form{
+        padding: 56px;
     }
 }
 
@@ -186,6 +236,10 @@
 @media (min-width: 75em) and (max-width: 87.49875em) {
     .container-padding-x{
         padding: 0 4em;
+    }
+
+    .auth-form{
+        padding: 64px 76px;
     }
 }
 

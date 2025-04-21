@@ -229,36 +229,38 @@ const video = document.querySelector('.about-video')
 const thumbnail = document.querySelector('.thumbnail-image')
 const videoIcon = document.querySelector('.play-button')
 
-video.addEventListener('click' , ()=>{
-  if (video.paused) {
-    if(videoIcon.classList.contains('bi-play-circle-fill')){
-      thumbnail.classList.add("d-none")
-      videoIcon.classList.replace('bi-play-circle-fill','bi-pause-circle-fill')
+if(video){
+  video.addEventListener('click' , ()=>{
+    if (video.paused) {
+      if(videoIcon.classList.contains('bi-play-circle-fill')){
+        thumbnail.classList.add("d-none")
+        videoIcon.classList.replace('bi-play-circle-fill','bi-pause-circle-fill')
+      }
+      video.addEventListener('mouseover' , ()=>{
+        thumbnail.classList.remove("d-none")
+      })
+      video.addEventListener('mouseleave' , ()=>{
+        thumbnail.classList.add("d-none")
+      })
+      video.play();
+  
+    } else {
+      
+      if(videoIcon.classList.contains('bi-pause-circle-fill')){
+        thumbnail.classList.remove("d-none")
+        videoIcon.classList.replace('bi-pause-circle-fill','bi-play-circle-fill')
+      }
+  
+      video.addEventListener('mouseover' , ()=>{
+        thumbnail.classList.remove("d-none")
+      })
+      video.addEventListener('mouseleave' , ()=>{
+        thumbnail.classList.remove("d-none")
+      })
+      video.pause();
     }
-    video.addEventListener('mouseover' , ()=>{
-      thumbnail.classList.remove("d-none")
-    })
-    video.addEventListener('mouseleave' , ()=>{
-      thumbnail.classList.add("d-none")
-    })
-    video.play();
-
-  } else {
-    
-    if(videoIcon.classList.contains('bi-pause-circle-fill')){
-      thumbnail.classList.remove("d-none")
-      videoIcon.classList.replace('bi-pause-circle-fill','bi-play-circle-fill')
-    }
-
-    video.addEventListener('mouseover' , ()=>{
-      thumbnail.classList.remove("d-none")
-    })
-    video.addEventListener('mouseleave' , ()=>{
-      thumbnail.classList.remove("d-none")
-    })
-    video.pause();
-  }
-})
+  })
+}
 
 
 })
