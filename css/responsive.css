@@ -142,6 +142,9 @@
     .auth-form{
         padding: 56px;
     }
+    .section-headline {
+        font-size: 3em;
+    }
 }
 
 

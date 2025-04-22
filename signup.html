@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestea</title>
+    <link rel="shortcut icon" href="assets/CELESTEA_iocn.ico" type="image/x-icon">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- LIB FILES -->
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/icon/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="lib/swiper.min.css">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="container-padding-x py-3">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+            <div class="col-xl-2">
+                <a href="index.html">
+                    <img src="assets/Celestea_LOGO.png" alt="LOGO" class="brand-logo">
+                </a>
+            </div>
+
+
+            <div class="d-flex flex-sm-fill" id="navigation-container">
+
+                <div class="d-flex d-xl-none ms-auto">
+
+                    <input id="menu-toggler" type="checkbox">
+                    <label for="menu-toggler" class="to-bar-group">
+                        <span class="to-bar bar1"></span>
+                        <span class="to-bar bar2"></span>
+                        <span class="to-bar bar3"></span>
+                    </label>
+
+                </div>
+
+
+                <nav
+                    class="flex-column flex-xl-row align-items-center gap-4 flex-fill justify-content-xl-between navigation-menus">
+
+                    <div
+                        class="navigation-bar d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-4 m-0 p-0 order-2 order-xl-1">
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>Decorative Lighting</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="shop.html">Demo 1</a>
+                                    <a href="shop.html">Demo 2</a>
+                                    <a href="shop.html">Demo 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>Architectural Lighting</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="shop.html">Demo 1</a>
+                                    <a href="shop.html">Demo 2</a>
+                                    <a href="shop.html">Demo 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>Wall lights</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="shop.html">Demo 1</a>
+                                    <a href="shop.html">Demo 2</a>
+                                    <a href="shop.html">Demo 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>More</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="about.html">About us</a>
+                                    <a href="contact.html">Contact us</a>
+                                    <a href="shop.html">Shop</a>
+                                    <a href="product.html">Products</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-xl-row align-items-center gap-2 menu-drop dropdown">
+                            <div class="d-flex justify-content-between justify-content-xl-start col-12 align-items-center gap-2 nav-link cursor-pointer"
+                                data-bs-toggle="dropdown">
+                                <span>Sale</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+
+                            <div class="dropdown-menu custom-drop-menu">
+                                <div class="drop-content">
+                                    <a href="shop.html">Demo 1</a>
+                                    <a href="shop.html">Demo 2</a>
+                                    <a href="shop.html">Demo 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="d-flex align-items-center gap-2 gap-sm-3 gap-xl-4 header-icon-container order-1 order-xl-2 flex-wrap">
+
+                        <div class="header-icon-box search-container flex-fill" data-bs-toggle="collapse"
+                            data-bs-target="#searchFilterBox">
+                            <i class="bi bi-search"></i>
+                        </div>
+
+                        <div class="header-icon-box cart-container flex-fill" data-bs-toggle="offcanvas"
+                            data-bs-target="#cartSideBar">
+                            <i class="bi bi-cart2"></i>
+                        </div>
+
+                        <a href="wishlist.html" class="header-icon-box wishlist-container flex-fill">
+                            <i class="bi bi-heart"></i>
+                        </a>
+
+                        <div class="ms-sm-2 account-container flex-fill">
+                            <div class="header-icon-box" data-bs-toggle="dropdown" id="accountDrop">
+                                <i class="bi bi-person"></i>
+                            </div>
+
+                            <div class="dropdown-menu dropdown-menu-end account-drop">
+                                <div class="d-flex flex-column">
+                                    <a href="#">Account</a>
+                                    <a href="#">Settings</a>
+                                    <a href="login.html">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+    <!-- SERACH FILTER BOX -->
+
+    <div class="collapse fade search-container-box col-12" id="searchFilterBox">
+        <div class="d-flex col-lg-4 col-md-6 col-sm-8 col-11 justify-content-center" style="height: fit-content;"
+            id="searchContainer">
+            <input type="search" class="search-input paragraph-size w-100" placeholder="Search here...">
+        </div>
+    </div>
+
+    <!-- CART OFFCANVAS -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSideBar" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="card-headline">Shopping Cart</h5>
+            <button class="btn ms-auto" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+
+            <div>
+
+                <div class="d-flex align-items-center gap-3 cart-side-box">
+                    <img src="assets/images/Blue Pendant.png" alt="product" loading="lazy" style="width: 64px;">
+                    <div class="d-flex align-items-center justify-content-between flex-fill flex-wrap gap-2">
+                        <div class="d-flex flex-column">
+                            <h5 class="featured-category-text mb-1">Chandeliers</h5>
+                            <span>₹ 20000 /-</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <span class="cart-product-count">
+                                <i class="bi bi-dash"></i>
+                            </span>
+                            <input type="number" class="text-center" value="1" style="width: 50px;">
+                            <span class="cart-product-count">
+                                <i class="bi bi-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="#" class="mt-4 cart-checkout paragraph-size fw-normal">Check Out</a>
+
+        </div>
+    </div>
+
+
+
+    <!-- SECTION START  -->
+
+    <section class="home-banner section-bg" style=" --banner-image:url('../assets/images/login_bg.webp')">
+        <div class="container-padding-x d-flex  justify-content-center text-white col-12" style="margin-top: 146px; margin-bottom: 46px;">
+
+            <div class="col-xxl-5 col-xl-6 col-md-9  col-12">
+                <div action="" class="auth-form">
+                    <h3 class="section-headline text-white mb-3 mb-sm-5">Sign Up</h3>
+
+                    <form action="">
+
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex auth-input mb-sm-4 mb-2">
+                                <input type="text" id="fullName" name="fullName"  class="login-input" required >
+                                  <label for="fullName" class="login-label">
+                                      <i class="bi bi-person-fill login-icon"></i>
+                                      <p class="m-0 card-content">Full name</p>
+                                  </label>
+                            </div>
+        
+                            <div class="d-flex auth-input mb-sm-4 mb-2">
+                                <input type="email" id="email" name="email"  class="login-input" required >
+                                  <label for="email" class="login-label">
+                                    <i class="bi bi-envelope-at-fill login-icon"></i>
+                                      <p class="m-0 card-content">Email address</p>
+                                  </label>
+                            </div>
+        
+                            <div class="d-flex auth-input mb-sm-4 mb-2">
+                                <input type="password" id="password" name="password"  class="login-input" required >
+                                  <label for="password" class="login-label">
+                                    <i class="bi bi-lock-fill login-icon"></i>
+                                      <p class="m-0 card-content">Password</p>
+                                  </label>
+                            </div>
+        
+                            <div class="d-flex auth-input mb-sm-4 mb-2">
+                                <input type="password" id="confirmPassword" name="confirmPassword"  class="login-input" required >
+                                  <label for="confirmPassword" class="login-label">
+                                    <i class="bi bi-file-lock2-fill login-icon"></i>
+                                      <p class="m-0 card-content">Confirm password</p>
+                                  </label>
+                            </div>
+                        </div>
+    
+                        <button type="submit" class="add-to-cart-button mt-3 mt-sm-5" style="width: 100%; max-width:100%;">Sign Up</button>
+
+                    </form>
+                    <hr class="my-sm-5 my-3">
+
+                    <button class="cta-outline-btn min-w col-12 d-flex gap-2 justify-content-center p-3 align-items-center"> <i class="bi bi-google"></i> Signup with Google</button>
+
+                    <div class="d-flex align-items-center gap-3 mt-sm-5 mt-3">
+                        <a href="login.html" class="paragraph-size text-white auth-link">Already have an account.</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--FOOTER -->
+
+
+    <footer class="section-bg container-padding-x container-padding-y">
+
+        <div class="brand-white-text">
+            <div class="d-flex flex-wrap  justify-content-center">
+
+                <!-- First Div -->
+                <div
+                    class="col-lg-3 col-md-12 col-12 d-flex align-items-center align-items-lg-start flex-column  gap-4 text-center text-lg-start text-md-center pb-4">
+
+                    <a href="index.html">
+                        <img src="assets/Celestea_LOGO.png" class="brand-logo" alt="logo" loading="lazy">
+                    </a>
+
+                    <p class="paragraph-size col-lg-12 col-md-8 col-sm-10 ">
+                        At Celestea, we believe lighting is more than just
+                        illumination—it's an art form that transforms spaces and inspires moods.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start socialIcons">
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-youtube"></i></a>
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="d-flex mt-lg-0 mt-4 flex-wrap col-lg-9 col-12 justify-content-between gap-3 gap-lg-0">
+
+                    <div class="col-lg-4 col-md-5 col-12 d-flex  justify-content-around align-items-center pb-4">
+                        <div class="vertical-line d-none d-lg-block"></div>
+                        <div class="d-flex flex-column gap-2 ps-md-3 text-center text-md-center">
+                            <h4 class="footer-subHead">Quick links</h4>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="shop.html">Product</a>
+                            <a href="shop.html">Categories</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-12 d-flex justify-content-around align-items-center pb-4">
+                        <div class="vertical-line d-none d-lg-block"></div>
+                        <div class="d-flex flex-column gap-2 ps-md-3 text-center text-md-center">
+                            <h4 class="footer-subHead">Major Categories</h4>
+                            <a href="">Chandeliers</a>
+                            <a href="">Pendants</a>
+                            <a href="">Wall Lights</a>
+                            <a href="">Home Decor</a>
+                            <a href="">Outdoor Lights</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-none d-md-block d-lg-none" style="background-color: #100b0033; height: 1px;">
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-12 d-flex justify-content-around align-items-center pb-4">
+                        <div class="vertical-line d-none d-lg-block"></div>
+                        <div class="d-flex flex-column gap-2 ps-md-3 text-center text-md-center">
+                            <h4 class="footer-subHead">Company</h4>
+                            <a href="">Help Center</a>
+                            <a href="">Address Store</a>
+                            <a href="">Privacy Policy</a>
+                            <a href="">Terms & Conditions</a>
+                            <a href="">Delivery & Returns</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="text-center mt-3 brand-white-text">
+            <p class="copyRight">© Copyright 2025 | CELESTEA . Powered by Zenerom Creative Lab.</p>
+        </div>
+
+    </footer>
+
+    <!-- LIB FILES -->
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/swiper.min.js"></script>
+    <!-- JS LINK -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
