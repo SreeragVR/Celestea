@@ -499,6 +499,13 @@ font-weight: 400;
 position: relative;
 padding-bottom: 5px;
 }
+.sub-headline {
+font-size: 20px;
+font-family: "roboto";
+font-weight: 400;
+position: relative;
+padding-bottom: 5px;
+}
 
 .footer-subHead::after {
 content: "";
@@ -1261,11 +1268,35 @@ font-size: 9vw;
 font-family: "Belleza", serif;
 color: #fff;
 }
+#lampContainer{
+    text-decoration: none;
+}
 .lamp{
 position: absolute;
 width: 35%;
 transform: rotate(26.57deg);
+transition: transform 0.2s ease-out;
 }
+.custom-cursor {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, #0e226bb9 , #3771c8b6);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%); 
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  .cursor-active {
+    cursor: none; 
+  }
 .about-video{
 height: 500px;
 width: 100%;
@@ -1389,4 +1420,71 @@ pointer-events: none;
 }
 .auth-link:hover{
     color: #0025AD !important;
+}
+
+.input-container{
+    background-color: #141010;
+    padding: 32px 26px;
+    border-radius: 10px;
+}
+
+.checkout-input{
+color: white;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #FBBE36;
+padding: 8px ;
+outline: none;
+}
+
+
+/* ORders Page */
+
+
+.progress-bar-col {
+  position: relative;
+  width: 1.5em;
+  min-height: 8em;
+}
+
+.progress-bar-col::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  transform: translateX(-50%);
+  width: 0.8em;
+  height: 0.8em;
+  background: rgba(251, 190, 54, 1);
+  border-radius: 50%;
+  z-index: 2;
+}
+.progress-bar-col::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0.8em;
+  transform: translateX(-50%);
+  width: 0.15em;
+  height: 100%;
+  background: rgba(251, 190, 54, 1);
+  z-index: 1;
+}
+.progress-bar-col.last-step::after {
+  display: none;
+}
+
+
+.order-card {
+  transition: 0.5s ease-in-out;
+  background-color: #111111;
+}
+.order-card:hover {
+  background-color: #1c1503;
+}
+
+.order-card.fade-out {
+  opacity: 0.5;
 }

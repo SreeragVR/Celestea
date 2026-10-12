@@ -31,6 +31,9 @@
     .about-fancy-text {
         font-size: 14vw;
     }
+    .input-container{
+        padding: 26px 16px;
+    }
 }
 
 

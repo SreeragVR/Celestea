@@ -262,5 +262,56 @@ if(video){
   })
 }
 
+  const lampContainer = document.getElementById("lampContainer");
+  const moveLamp = document.getElementById("movingLamp");
+  const cursor = document.getElementById("customCursor");
+
+if(cursor){
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  });
+}
+
+if(lampContainer){
+  lampContainer.addEventListener("mousemove", (e) => {
+    const rect = lampContainer.getBoundingClientRect();
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+    const moveX = ((mouseX - centerX) / centerX) * 200; 
+    const moveY = ((mouseY - centerY) / centerY) * 200;
+    moveLamp.style.transform = `translate(${moveX}px, ${moveY}px) rotate(26.57deg)`;
+  });
+
+  lampContainer.addEventListener("mouseenter", () => {
+    cursor.style.opacity = "1";
+    lampContainer.classList.add("cursor-active"); 
+  });
+  
+  lampContainer.addEventListener("mouseleave", () => {
+    cursor.style.opacity = "0";
+    lampContainer.classList.remove("cursor-active"); 
+    moveLamp.style.transform = "translate(0, 0) rotate(26.57deg)"; 
+  });
+}
+
+
+const orderCards = document.querySelectorAll(".order-card");
+if(orderCards){
+  orderCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.add("fade-out");
+
+    setTimeout(() => {
+          card.classList.remove("fade-out");
+    }, 500);
+  });
+});
+
+}
+
+
 
 })
